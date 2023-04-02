@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>BoolzApp</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="background d-flex justify-content-center align-items-center">
+				<div class="background-green"></div>
+				<div class="container container-xl d-flex">
+					<div class="left">
+						<div class="check left-top d-flex align-items-center">
+							<img src="./img/avatar_io.jpg" alt="" class="user-img ms-2" />
+							<h6 class="mb-0">Sofia</h6>
+						</div>
+						<div class="check notify d-flex align-items-center">
+							<div class="bell ms-2"><i class="fa-solid fa-bell-slash"></i></div>
+
+							<div class="user-info ms-2">
+								<h6 class="mb-0">Ricevi notifiche di nuovi messaggi</h6>
+								<p class="mb-0 text-decoration-underline">Attiva notifiche desktop</p>
+							</div>
+						</div>
+						<div class="check search d-flex justify-content-center align-items-center px-2">
+							<input
+								class="form-control"
+								list="datalistOptions"
+								id="exampleDataList"
+								placeholder="Cerca o inizia una nuova chat"
+							/>
+						</div>
+						<div class="check left-bottom overflow-auto">
+							<div class="user d-flex justify-content-between">
+								<div class="user-right d-flex align-items-center">
+									<img src="./img/avatar_1.jpg" alt="" class="user-img ms-2" />
+									<div class="user-info ms-2">
+										<h6 class="mb-0">Michele</h6>
+										<p class="mb-0">Ultimo messaggio inviato</p>
+									</div>
+								</div>
+								<p class="p-2">12:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="check right-top d-flex justify-content-between">
+							<div class="left-side d-flex align-items-center">
+								<img src="./img/avatar_1.jpg" alt="" class="user-img ms-2" />
+								<div class="user-info ms-2">
+									<h6 class="mb-0">Michele</h6>
+									<p class="mb-0">Ultimo messaggio oggi alle 12:00</p>
+								</div>
+							</div>
+							<div class="right-side d-flex align-items-center">
+								<i class="px-1 fa-solid fa-magnifying-glass"></i>
+								<i class="px-1 fa-solid fa-paperclip"></i>
+								<i class="px-1 fa-solid fa-ellipsis-vertical"></i>
+							</div>
+						</div>
+						<div class="check bg-right overflow-auto">
+							<div class="text-area">
+								<div class="d-flex justify-content-start">
+									<div class="mymessage d-flex align-items-center ps-2 rounded">Churros!</div>
+								</div>
+								<div class="d-flex justify-content-end">
+									<div class="yourmessage d-flex align-items-center ps-2 rounded">Chimichanga!</div>
+								</div>
+							</div>
+						</div>
+						<div class="check right-bottom d-flex justify-content-between align-items-center">
+							<i class="fa-regular fa-face-smile px-4"></i>
+							<input class="form-control" type="text" value="" placeholder="Scrivi un messaggio" />
+							<i class="fa-solid fa-microphone px-4"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
+		<script type="text/javascript" src="./js/utility.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

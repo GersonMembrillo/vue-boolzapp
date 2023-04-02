@@ -1,0 +1,126 @@
+.check {
+  border: 1px solid black;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: #d9dbd5;
+  position: relative;
+}
+
+.background-green {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background-color: #009688;
+  top: 0;
+}
+
+.container {
+  background-color: #EAEAEA;
+  position: absolute;
+}
+
+.left-top {
+  height: 70px;
+  width: 100%;
+}
+
+.notify{
+  width: 100%;
+  height: 80px;
+  background-color: #8EDAFC;
+}
+
+.search{
+  background-color: #F9F9F9;
+  height: 50px;
+}
+
+.left-bottom {
+  height: calc(100% - 200px);
+  width: 100%;
+}
+
+.bg-right{
+  width: 100%;
+  height: calc(100% - 120px);
+  background-image: url("/img/mine.jpg");
+}
+
+.text-area {
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+}
+
+.right-top {
+  height: 70px;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+
+.right-bottom {
+  height: 50px;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+
+.left {
+  width: 35%;
+  height: 90vh;
+  margin-left: -10px;
+}
+
+.right {
+  width: 65%;
+  height: 90vh;
+}
+
+.user {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 80px;
+}
+
+.selectec-user{
+  background-color: #E9EBEB;
+}
+
+.mymessage {
+  background-color: #D5F9BA;
+  color: black;
+  width: 200px;
+  height: 50px;
+}
+
+.yourmessage{
+  background-color: white;
+  color: black;
+  width: 200px;
+  height: 50px;
+}
+
+.user-img {
+  display: inline-block;
+  margin-left: 55px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 999px;
+}
+
+.fa-solid.fa-bell-slash {
+  padding: 15px 14px;
+  background-color: white;
+  border-radius: 100%;
+  color: #8EDAFC;
+}
