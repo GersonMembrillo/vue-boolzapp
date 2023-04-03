@@ -28,7 +28,7 @@
 					<div class="left">
 						<div class="check left-top d-flex align-items-center">
 							<img src="./img/avatar_io.jpg" alt="" class="user-img ms-2" />
-							<h6 class="mb-0">Sofia</h6>
+							<h6 class="mb-0 ms-2">Sofia</h6>
 						</div>
 						<div class="check notify d-flex align-items-center">
 							<div class="bell ms-2"><i class="fa-solid fa-bell-slash"></i></div>
@@ -47,11 +47,15 @@
 							/>
 						</div>
 						<div class="check left-bottom overflow-auto">
-							<div class="user d-flex justify-content-between">
+							<div
+								class="user d-flex justify-content-between"
+								v-for="(contact, id) in contacts"
+								:key="id"
+							>
 								<div class="user-right d-flex align-items-center">
-									<img src="./img/avatar_1.jpg" alt="" class="user-img ms-2" />
+									<img :src="contact.avatar" :alt="contact.name" class="user-img ms-2" />
 									<div class="user-info ms-2">
-										<h6 class="mb-0">Michele</h6>
+										<h6 class="mb-0">{{contact.name}}</h6>
 										<p class="mb-0">Ultimo messaggio inviato</p>
 									</div>
 								</div>
