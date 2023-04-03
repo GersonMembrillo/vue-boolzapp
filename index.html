@@ -68,9 +68,13 @@
 					<div class="right">
 						<div class="check right-top d-flex justify-content-between">
 							<div class="left-side d-flex align-items-center">
-								<img src="./img/avatar_1.jpg" alt="" class="user-img ms-2" />
+								<img
+									:src="contacts[activeUser].avatar"
+									:alt="contacts[activeUser].name"
+									class="user-img ms-2"
+								/>
 								<div class="user-info ms-2">
-									<h6 class="mb-0">Michele</h6>
+									<h6 class="mb-0">{{contacts[activeUser].name}}</h6>
 									<p class="mb-0">Ultimo messaggio oggi alle 12:00</p>
 								</div>
 							</div>
