@@ -49,6 +49,8 @@
 						<div class="check left-bottom overflow-auto">
 							<div
 								class="user d-flex justify-content-between"
+								:class="id === activeUser ? 'active-user' : '' "
+								@click="changeUser(id)"
 								v-for="(contact, id) in contacts"
 								:key="id"
 							>
