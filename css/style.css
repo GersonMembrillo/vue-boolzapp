@@ -88,18 +88,26 @@
   background-color: #E9EBEB;
 }
 
-.mymessage {
+.message.sent {
   background-color: #D5F9BA;
   color: black;
   width: 200px;
-  height: 50px;
+  height: auto;
 }
 
-.yourmessage{
+.sent {
+  flex-direction: row-reverse;
+}
+
+.recieved {
+  flex-direction: row;
+}
+
+.message.received{
   background-color: white;
   color: black;
   width: 200px;
-  height: 50px;
+  height: auto;
 }
 
 .user-img {
