@@ -17,6 +17,7 @@
 			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
 			crossorigin="anonymous"
 		/>
+		<script src="https://cdn.jsdelivr.net/npm/luxon@3.0.3/build/global/luxon.min.js"></script>
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>BoolzApp</title>
 	</head>
@@ -44,6 +45,8 @@
 								list="datalistOptions"
 								id="exampleDataList"
 								placeholder="Cerca o inizia una nuova chat"
+								v-model="contactSearch"
+								:keyup="filterContacts"
 							/>
 						</div>
 						<div class="check left-bottom overflow-auto">
@@ -53,6 +56,7 @@
 								@click="changeUser(id)"
 								v-for="(contact, id) in contacts"
 								:key="id"
+								:class="{'active' : index === filterContacts, 'd-none' : !contact.visible }"
 							>
 								<div class="user-right d-flex align-items-center">
 									<img :src="contact.avatar" :alt="contact.name" class="user-img ms-2" />
@@ -101,14 +105,21 @@
 						</div>
 						<div class="check right-bottom d-flex justify-content-between align-items-center">
 							<i class="fa-regular fa-face-smile px-4"></i>
-							<input class="form-control" type="text" value="" placeholder="Scrivi un messaggio" />
+							<input
+								class="form-control"
+								type="text"
+								value=""
+								placeholder="Scrivi un messaggio"
+								v-model="messageText"
+								@keyup.enter="sendMessage"
+							/>
 							<i class="fa-solid fa-microphone px-4"></i>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js"></script>
 		<script type="text/javascript" src="./js/script.js"></script>
 		<script type="text/javascript" src="./js/utility.js"></script>
 		<script

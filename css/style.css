@@ -132,3 +132,7 @@ img {
   border-radius: 100%;
   color: #8EDAFC;
 }
+
+.active{
+  display: block;
+}
