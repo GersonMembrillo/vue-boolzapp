@@ -182,8 +182,8 @@ createApp({
 		};
 	},
 	methods: {
-		changeUser(userID) {
-			this.activeUser = userID;
+		changeUser(userIndex) {
+			this.activeUser = userIndex;
 		},
 		filterContacts() {
 			this.contacts.forEach((contact) => {

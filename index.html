@@ -46,17 +46,16 @@
 								id="exampleDataList"
 								placeholder="Cerca o inizia una nuova chat"
 								v-model="contactSearch"
-								:keyup="filterContacts"
+								@keyup="filterContacts"
 							/>
 						</div>
 						<div class="check left-bottom overflow-auto">
 							<div
 								class="user d-flex justify-content-between"
-								:class="id === activeUser ? 'active-user' : '' "
-								@click="changeUser(id)"
-								v-for="(contact, id) in contacts"
+								@click="changeUser(index)"
+								v-for="(contact, index) in contacts"
 								:key="id"
-								:class="{'active' : index === filterContacts, 'd-none' : !contact.visible }"
+								:class="{'active' : index === activeUser, 'd-none' : !contact.visible}"
 							>
 								<div class="user-right d-flex align-items-center">
 									<img :src="contact.avatar" :alt="contact.name" class="user-img ms-2" />
@@ -129,3 +128,5 @@
 		></script>
 	</body>
 </html>
+
+<!-- OGGI POMERIGGIO HO DEGLI IMPEGNI, PER I BÒNUS USERÒ I GIORNI DI VACANZA, COSÌ DA RIPASSARE JS, COMUNQUE HO NOTATO CHE MOLTE DELLE COSE USATE IN QUESTO ESERCIZIO LE ABBIAMO VISTE IN VECCHI FATTI SOLO IN JS. -->
